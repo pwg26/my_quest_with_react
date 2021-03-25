@@ -93,7 +93,7 @@ function Navbar() {
                     : "nav-link"
                 }
               >
-                About
+                Portfolio
               </Link>
             </li>
             <li className="nav-item dropdown">
