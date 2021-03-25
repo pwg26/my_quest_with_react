@@ -1,0 +1,64 @@
+/* Home backround */
+.backround-home {
+  background: url(../images/sitting.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+/* contact backround */
+.backround-contact {
+  background-color: rgb(236, 233, 41);
+}
+
+/* porfolio backround */
+.backround-por {
+  background-color: rgb(106, 6, 236);
+}
+
+/* travel backround */
+.backround-tra {
+  background-color: rgb(41, 223, 236);
+}
+
+/* formating for pictures in about */
+.pics-about {
+  margin-bottom: 3%;
+}
+
+/* formating for the carousels in travel sections*/
+.carousel .carousel-item {
+  min-height: 500px;
+}
+
+/* formating the images with the cards and carousels within the traval sections */
+.carousel-item .img-fluid {
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+  width: 100%;
+}
+
+/* formating in cards for profolio */
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 400px;
+}
+
+/* removes underline from a tag */
+a {
+  text-decoration: none;
+}
+
+/* moves contact on nav bar to right */
+#rnav {
+  margin-left: auto;
+}
+
+/* styleing of porfolio pics */
+.por-pic {
+  max-height: 185px;
+}
