@@ -1,7 +1,10 @@
 import React from "react";
-import CardBtn from "../CardBtn";
-import CardDescription from "../../utils/CardDescription";
-import CardHeading from "../CardDescription";
+import CardBtnApp from "../CardBtn-app";
+import CardBtnGit from "../CardBtn-git";
+import CardDescription from "../CardDescription";
+import CardHeading from "../CardHeading";
+import CardImage from "../CardImage";
+
 import "../style.css";
 
 function Card() {
@@ -9,20 +12,17 @@ function Card() {
     // The most straightforward solution would be to add the Consumer to the Card component.
     // This way, all Card components can have the Card context passed directly as props
 
-    <CardContext.Consumer>
-      {({ image, handleBtnClick }) => (
-        <div className="card">
-          {/* Here, we do not pass the title to demonstrate that it can also be consumed from the CardTitleText component */}
-          <div className="card-body">
-            <CardHeading />
-            <CardDescription />
-
-            <CardBtn onClick={handleBtnClick} data-value="app" />
-            <CardBtn onClick={handleBtnClick} data-value="git" />
-          </div>
+    <div className="card h-100">
+      <CardImage />
+      <div className="card-body">
+        {/* <CardHeading /> */}
+        <CardDescription />
+        <div className="d-grid gap-2">
+          <CardBtnGit />
+          <CardBtnApp />
         </div>
-      )}
-    </CardContext.Consumer>
+      </div>
+    </div>
   );
 }
 

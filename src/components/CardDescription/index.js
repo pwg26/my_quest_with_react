@@ -4,7 +4,12 @@ import ProjectContext from "../../utils/ProjectContext";
 function CardDescription() {
   return (
     <ProjectContext.Consumer>
-      {({ description }) => <p className="card-text">{description}</p>}
+      {({ title, description }) => (
+        <>
+          <h5 className="card-title">{title}</h5>
+          <p className="card-text">{description}</p>
+        </>
+      )}
     </ProjectContext.Consumer>
   );
 }

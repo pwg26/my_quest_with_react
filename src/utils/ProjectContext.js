@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArticleContext = React.createContext({
+const ProjectContext = React.createContext({
   image: "",
   title: "",
   description: "",
@@ -8,4 +8,4 @@ const ArticleContext = React.createContext({
   appurl: "",
 });
 
-export default ArticleContext;
+export default ProjectContext;

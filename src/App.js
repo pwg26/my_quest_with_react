@@ -1,12 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-// import Travel from "./pages/travel_home";
-// import Portfolio from "./pages/portfolio";
-// import Contact from "./pages/contact";
-// import Sayulita from "./pages/sayulita";
-// import Munich from "./pages/munich";
+import Travel from "./pages/Travel_Home";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+// import Sayulita from "./pages/Sayulita";
+// import Munich from "./pages/Munich";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
@@ -21,11 +21,11 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/about" component={About} />
-          {/* <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/travel" component={Travel} />
-          <Route exact path="/sayulita" component={Sayulita} />
-          <Route exact path="/munich" component={Munich} />
-          <Route exact path="/contact" component={Contact} /> */}
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/travel_home" component={Travel} />
+          {/* <Route exact path="/sayulita" component={Sayulita} />
+          <Route exact path="/munich" component={Munich} /> */}
+          <Route exact path="/contact" component={Contact} />
         </Wrapper>
         <Footer />
       </div>

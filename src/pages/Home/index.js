@@ -21,7 +21,7 @@ function Home() {
     //   </div>
     // </ArticleContext.Provider>
 
-    <div classname="container">
+    <div className="container">
       <div className="row">
         <div className="col-sm-6 mt-4 mb-2 bg-white rounded">
           <h1>I'm Pierce Gladfelter.</h1>
