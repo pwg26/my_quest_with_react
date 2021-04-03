@@ -18,7 +18,7 @@ import "./App.css";
 
 function App() {
   return (
-    <HashRouter>
+    <Router>
       <div>
         <Navbar />
         <Wrapper>
@@ -31,7 +31,7 @@ function App() {
         </Wrapper>
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
