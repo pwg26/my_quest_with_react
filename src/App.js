@@ -1,5 +1,8 @@
 import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
+
+import React from "react";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 // import Travel from "./pages/Travel_Home";
@@ -15,7 +18,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router basename="/#">
+    <HashRouter>
       <div>
         <Navbar />
         <Wrapper>
@@ -23,14 +26,12 @@ function App() {
           <Route exact path="/home" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
-          {/* <Route exact path="/travel_home" component={Travel} />
-          <Route exact path="/sayulita" component={Sayulita} />
-          <Route exact path="/munich" component={Munich} /> */}
+
           <Route exact path="/contact" component={Contact} />
         </Wrapper>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
