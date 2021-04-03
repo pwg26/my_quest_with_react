@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
-import Container from "../../components/Container";
+
 import "../../components/style.css";
-import "../../images/me.jpg";
+
 import ProjectContext from "../../utils/ProjectContext";
-import Card from "../../components/Card";
+
 import CardContainer from "../../components/CardContainer";
 
-
-
-import img1 from "../../images/caro.jpg";
+import Hostal from "../../components/images/caro.jpg";
+import Urban from "../../components/images/urban.png";
+import Weather from "../../components/images/weather.png";
+import Password from "../../components/images/password.jpg";
 
 function Portfolio() {
   const [projectState, setProjectState] = useState({
@@ -40,7 +41,7 @@ function Portfolio() {
         <div className="d-flex align-items-baseline row justify-content-md-center">
           <ProjectContext.Provider
             value={{
-              image: img1,
+              image: Hostal,
               title: "Fitness Tracker",
               description:
                 "An application to creating workouts that provided qualatitive and quantative feedback",
@@ -50,17 +51,63 @@ function Portfolio() {
           >
             <CardContainer />
           </ProjectContext.Provider>
-          {/* <ProjectContext.Provider
+          <ProjectContext.Provider
             value={{
-              image: "../../images/caro.jpg",
+              image: Hostal,
               title: "Hostal Hedonism",
-              description: "An application that manages guests, room",
-              giturl: "https://github.com/pwg26/Unit_Of_Energy_Tracker",
+              description:
+                "An application that manages guests, room, and activities",
+              giturl: "https://github.com/pwg26/hostel_hedonism",
               appurl: "https://fitnessssss.herokuapp.com/",
             }}
           >
             <CardContainer />
-          </ProjectContext.Provider> */}
+          </ProjectContext.Provider>
+          <ProjectContext.Provider
+            value={{
+              image: Urban,
+              title: "Urban El Dorado",
+              description:
+                "An application that tracks the social standing of an area",
+              giturl: "https://github.com/pwg26/RepositoryForAwesomeProject",
+              appurl: "https://pwg26.github.io/RepositoryForAwesomeProject/",
+            }}
+          >
+            <CardContainer />
+          </ProjectContext.Provider>
+          <ProjectContext.Provider
+            value={{
+              image: Urban,
+              title: "Straight Finance",
+              description: "A budget tacker",
+              giturl: "https://github.com/pwg26/Straight_Finance",
+              appurl: "https://pwg26.github.io/RepositoryForAwesomeProject/",
+            }}
+          >
+            <CardContainer />
+          </ProjectContext.Provider>
+          <ProjectContext.Provider
+            value={{
+              image: Weather,
+              title: "Weather Boy",
+              description: "A weather tracking app for a 5 day forecast",
+              giturl: "https://github.com/pwg26/GetToKnowTheWeather",
+              appurl: "https://pwg26.github.io/GetToKnowTheWeather/",
+            }}
+          >
+            <CardContainer />
+          </ProjectContext.Provider>
+          <ProjectContext.Provider
+            value={{
+              image: Password,
+              title: "Random Password Generator",
+              description: "A customizable password generator",
+              giturl: "https://github.com/pwg26/SuperCoolPasswordPicker",
+              appurl: "https://pwg26.github.io/SuperCoolPasswordPicker/",
+            }}
+          >
+            <CardContainer />
+          </ProjectContext.Provider>
         </div>
       </section>
     </main>

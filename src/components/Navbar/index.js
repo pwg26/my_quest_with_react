@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -6,14 +7,12 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Pierce
-        </a>
+        <a className="navbar-brand">Pierce</a>
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
+          data-bs-target="navbarNavDropdown"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -59,56 +58,7 @@ function Navbar() {
                 Portfolio
               </Link>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Travel
-              </a>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <Link
-                    to="/travel_home"
-                    className={
-                      window.location.pathname === "/travel_home"
-                        ? "nav-link active"
-                        : "nav-link"
-                    }
-                  >
-                    Travel Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/sayulita"
-                    className={
-                      window.location.pathname === "/sayulita"
-                        ? "nav-link active"
-                        : "nav-link"
-                    }
-                  >
-                    Sayulita
-                  </Link>
-                </li>
-                <Link
-                  to="/munich"
-                  className={
-                    window.location.pathname === "/munich"
-                      ? "nav-link active"
-                      : "nav-link"
-                  }
-                >
-                  Munich
-                </Link>
-              </ul>
-            </li>
+
             <li className="nav-item">
               <Link
                 to="/contact"
@@ -161,3 +111,27 @@ function Navbar() {
 }
 
 export default Navbar;
+
+//React NavBar Not Working=============== will update later
+// function Navbarr() {
+//   return (
+//     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+//       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+//       <Navbar.Collapse id="responsive-navbar-nav">
+//         <Nav className="mr-auto">
+//           <Nav.Link href="#home">Home</Nav.Link>
+//           <Nav.Link href="#about">About</Nav.Link>
+//           <NavDropdown title="Travel" id="collasible-nav-dropdown">
+//             <NavDropdown.Item href="#travelhome">Tracel</NavDropdown.Item>
+//             <NavDropdown.Item href="#munich">Another action</NavDropdown.Item>
+//             <NavDropdown.Item href="#sayulita">Something</NavDropdown.Item>
+//           </NavDropdown>
+//         </Nav>
+//         <Nav>
+//           <Nav.Link href="#contact">Contact</Nav.Link>
+//         </Nav>
+//       </Navbar.Collapse>
+//     </Navbar>
+//   );
+// }
+// export default Navbarr;

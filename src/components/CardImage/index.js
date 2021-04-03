@@ -6,7 +6,7 @@ function CardImage() {
     <ProjectContext.Consumer>
       {({ image }) => (
         <img
-          class="card-img-top mt-2 por-pic"
+          className="card-img-top mt-2 por-pic"
           src={image}
           alt="Card image cap"
         />

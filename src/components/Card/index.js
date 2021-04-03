@@ -1,8 +1,8 @@
 import React from "react";
-import CardBtnApp from "../CardBtn-app";
-import CardBtnGit from "../CardBtn-git";
+import CardBtns from "../CardBtns";
+
 import CardDescription from "../CardDescription";
-import CardHeading from "../CardHeading";
+
 import CardImage from "../CardImage";
 
 import "../style.css";
@@ -18,8 +18,7 @@ function Card() {
         {/* <CardHeading /> */}
         <CardDescription />
         <div className="d-grid gap-2">
-          <CardBtnGit />
-          <CardBtnApp />
+          <CardBtns />
         </div>
       </div>
     </div>

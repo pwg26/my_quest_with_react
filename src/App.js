@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+
 import "./App.css";
 
 function App() {
@@ -22,8 +23,8 @@ function App() {
           <Route exact path="/home" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/travel_home" component={Travel} />
-          {/* <Route exact path="/sayulita" component={Sayulita} />
+          {/* <Route exact path="/travel_home" component={Travel} />
+          <Route exact path="/sayulita" component={Sayulita} />
           <Route exact path="/munich" component={Munich} /> */}
           <Route exact path="/contact" component={Contact} />
         </Wrapper>

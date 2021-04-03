@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import Container from "../../components/Container";
+import React from "react";
+
 import "../../components/style.css";
-import "../../images/me.jpg";
 
 function Travel() {
   return (
