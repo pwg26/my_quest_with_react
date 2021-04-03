@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Travel from "./pages/Travel_Home";
+// import Travel from "./pages/Travel_Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 // import Sayulita from "./pages/Sayulita";
@@ -15,7 +15,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/#">
       <div>
         <Navbar />
         <Wrapper>
